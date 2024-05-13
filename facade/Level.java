@@ -23,7 +23,7 @@ public class Level {
 
         System.out.println("Starting game in the world " + world.getName());
 
-        enemyManager.spawnEnemies();
+        enemyManager.spawnEnemies(world, 2);
 
         while (playerManager.getPlayer().getHP() > 0 && enemyManager.areEnemiesRemaining()) {
             playerManager.actionMenu();
